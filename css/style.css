@@ -1,0 +1,334 @@
+/*Skip To Main Styling*/
+
+.skip a{
+     position:absolute;
+     top: -65px;
+     font-size: 18px; 
+     padding: 8px;   
+}
+
+.skip a:focus{
+     top:25px;
+     background-color: #f2f2f2;
+     border: 3px solid #00274c;
+}
+
+
+
+/*General Styling for headers, lists etc*/
+
+h1,h2,h3{
+    font-family: Roboto Condensed, sans-serif;
+    color: #00274c;
+}
+
+h1{
+  font-size: 40px;
+  line-height: 1;
+  padding: 25px 0;
+  text-align: center;
+  background-color: #ffcb05;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1;
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #ffcb05 ;
+  margin-bottom: 1em;
+}
+
+h3{ 
+    font-size: 25px;
+    line-height: 1;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+
+ul{
+    list-style-type:circle;
+    padding-left: 25px;
+    justify-self: left;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.15;
+}
+
+ol{
+  list-style: decimal;
+   padding-left: 25px;
+    justify-self: left;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.15;
+}
+
+
+p{
+  font-size: 18px;
+  line-height: 1.15;
+}
+
+
+.bold-text{
+  font-weight: bold;
+}
+
+
+ /*background color and border bottom characeristics were taken from https://www.si.umich.edu/*/
+footer{
+  background-color: #f2f2f2;;
+  border-bottom: 13px solid #ffcb05;
+  color: black;
+  padding: 30px;
+  text-align: center;
+
+}
+
+.logo img{
+  display: block;
+  max-width: 95%;
+  margin: 1.5em auto 1.5em 10px;
+  height: auto;
+}
+
+
+
+/*Grid Layout For Home Page*/
+.IndexContainer, .NetworkingContainer, .InterviewContainer, .ResumeContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px; 
+}
+
+
+.IndexContainer div, .NetworkingContainer div, .InterviewContainer div, .ResumeContainer div{
+  padding: 20px;
+  text-align: left;
+}
+
+
+/*https://chatgpt.com/c/68e5daf3-cb7c-8333-9796-0b25d138f38e*/
+/* --- Fix embedded YouTube video overflow ---  From Chat gpt*/
+.IndexContainer iframe, .NetworkingContainer iframe, .InterviewContainer iframe, .ResumeContainer iframe {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: auto;
+}
+
+/* --- Fix image overflow ---  From Chat gpt*/
+.IndexContainer img , .NetworkingContainer img, .InterviewContainer img, .ResumeContainer img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.why-resource-text li,.resume-steps li, .resume-resources li ,.resume-FAQ li, .resume-overview p, .networking-ways li, .tech-interview-guide li{
+  margin-bottom: 1em;
+
+}
+
+.networking-resources li , .popular-resources li, .start-here li, .interview-resource-list li{
+  margin-bottom: .5em;
+  
+}
+
+
+.overview, .why-resource-text, .start-here, .popular-resources, .connect-text, .video-title{
+  grid-column: 1/-1;
+  grid-column: 1 / -1;
+  justify-self: stretch; 
+  align-self: center;
+  width: 100%;           
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.overview{
+  grid-row: 1/span 1;
+}
+
+.why-resource-text{
+  grid-row: 2/span 1;
+
+}
+
+.start-here{
+  grid-column: 1/span 2;
+  grid-row: 4/span 1;
+
+}
+
+.video-title{
+  grid-column: 1/-1;
+  grid-row: 5/span 1;
+
+}
+
+.video-title h3{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-left: 20px;
+}
+
+#vidTitle {
+  padding:0px;
+}
+
+.summer_intern_vid{
+  grid-column: 1/-1;
+  grid-row: 6/span 1;
+  justify-self: center;
+}
+
+#internVideo{
+  position: relative;
+  overflow: hidden;
+  width:80%;
+}
+
+.backpack_img {
+  grid-column: 1/-1;
+  grid-row: 3/span 1;
+  justify-self: center;
+  align-self: center;
+  margin: auto;
+}
+
+.UMSI-logo{
+  display: grid;
+  grid-column: 3/-1;
+  grid-row: 4/span 1;
+  height: auto;
+  justify-self: center;
+  align-self: center;
+  max-width: 75%;
+}
+
+
+
+/*Layout for Resume Page*/
+.resume-FAQ,.resume-overview, .resume-resources, .resume-steps, .careerfair-img{
+  grid-column: 1/-1;
+}
+
+.resume-overview{
+  grid-row: 1/span 1;
+}
+
+.careerfair-img{
+  grid-row: 2/span 1;
+}
+
+.resume-steps{
+  grid-row: 3/span 1;
+}
+
+.resume-resources{
+  grid-row: 4/span 1;
+}
+
+.resume-FAQ{
+  grid-row: 5/span 1;
+}
+
+
+/*Grid Layout for Networking page*/
+.network-intro{
+  grid-column: 1/-1;
+  grid-row: 1/span 1;
+}
+
+.network-img1{
+  grid-column: 1/-1;
+  grid-row: 2/span 1;
+}
+
+.networking-courses{
+  grid-column: 1/-1;
+  grid-row: 3/span 1;
+}
+
+.networking-vid{
+  grid-column: 1/-1;
+  grid-row: 4/span 1;
+  position: relative;
+  overflow: hidden;
+  width:80%;
+  margin: auto;
+}
+
+.networking-ways{
+  grid-column: 1/-1;
+  grid-row: 5/span 1;
+}
+
+.networking-img2{
+  grid-column: 1/-1;
+  grid-row: 6/span 1;
+}
+
+.networking-canvas{
+  grid-column: 1/-1;
+  grid-row: 7/span 1;
+}
+
+.networking-resources{
+  grid-column: 1/-1;
+  grid-row: 8/span 1;
+}
+
+
+
+/*Grid Layout for Technical interview page*/
+.interview-intro{
+  grid-column: 1/-1;
+  grid-row: 1/span 1;
+}
+
+.fdoc-img{
+  grid-column: 1/-1;
+  grid-row: 2/span 1;
+}
+
+.interview-prep{
+  grid-column: 1/-1;
+  grid-row: 3/span 1;
+}
+
+.tech-interview-guide{
+  grid-column: 1/-1;
+  grid-row: 4/span 1;
+}
+   
+
+.ace-interview{
+  grid-column: 1/-1;
+  grid-row: 5/span 1;
+}
+
+.interview-vid{
+  grid-column: 1/-1;
+  grid-row: 7/span 1;
+  position: relative;
+  overflow: hidden;
+  width:80%;
+  margin:auto
+  
+}
+
+.interview-resource-list{
+  grid-column: 1/-1;
+  grid-row: 8/span 1;
+}
+
+.interview-resource-list p{
+  margin-top: 1em;
+}

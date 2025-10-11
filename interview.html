@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/UMSI_signature_vertical_informal_solidblue.jpg" >
+    <link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
     <title>MSI Career Development Resource Hub</title>
 </head>
 <body>
 
      <header>
-  <a href = "">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
@@ -18,53 +20,63 @@
                 <li><a href = "interview.html">Technical Interviews</a></li>
             </ul>
         </nav>
+
+    <div class="logo" id="logo" tabindex="0">
+    <img src="images/logo-header.png" alt="University of Michgian School of Information">
+    </div>
+
+    <div class="title" tabindex="0">
     <h1>Technical Interview Guidance</h1>
+    </div>
 
     </header>
 
-    <main>
+    <main class="InterviewContainer" id="main">
 
         <!-- Introduction-->
-        <section>
+         <div class="interview-intro" tabindex="0">
             <h2>What is a Technical Interview?</h2>
 
             <p>Technical interviewing can be a combination of walking an interviewer through a technical project, answering questions about the applications of various methods, and a discussion of innovations in the company's industry. It can be common for interviewers to ask brain teasers or reasoning problems to test how well you can solve problems. Make sure to highlight your skills as you answer questions, both in terms of technical capabilities and critical thinking.</p>
+        </div>
 
-
+        <div class="fdoc-img" tabindex="0">
             <img src="images/FLINT_FirstDayofClass_0077.JPG" alt="Student sitting at a table on their computer with a Go Blue sign behind them." width="560" height ="315">
+        </div>
+         
 
-        </section>
 
-
-        <section>
+        <div class ="interview-prep" tabindex="0">
             <h2>Preparing for an Interview</h2>
-
              <p>Before any interview it is important to do some research and preparations. Take a moment to look up the company and find out some background information on your interviewers using LinkedIn. Ensure that your resume and portfolio are ready and you can comfortably discuss all of the content in them. Lastly make sure you know where the interview is taking place and find a quiet distraction free location if the interview is virtual.</p>
 
-        </section>
+        </div>
 
         <!--Guidelines for technical interviews-->
-        <section>
+        <div class="tech-interview-guide" tabindex="0">
             <h2>How to Answer Technical Questions</h2>
 
             <ul>
-                <li> <strong>Keep Answers Concise:</strong> Aim to speak for no more than 2-3 minutes or you may loose the interviewer's attention.</li>
-                <li><strong>Review Basics in the Field:</strong> You may be asked questions about fundamentals such as when to use certain programming concepts.</li>
-                <li><strong>Review Your Past Projects:</strong> Prepare to talk about you team based technical project work and your specific role.</li>
-                <li><strong>You Don't Have to Know Eveyting:</strong> It is perfectly ok to not know the exact answer to the question; the interviewer wants to see your thought process when problem solving.</li>
+                <li> <span class="bold-text">Keep Answers Concise:</span> Aim to speak for no more than 2-3 minutes or you may loose the interviewer's attention.</li>
+                <li><span class="bold-text">Review Basics in the Field:</span> You may be asked questions about fundamentals such as when to use certain programming concepts.</li>
+                <li><span class="bold-text">Review Your Past Projects:</span> Prepare to talk about you team based technical project work and your specific role.</li>
+                <li><span class="bold-text">You Don't Have to Know Eveyting:</span> It is perfectly ok to not know the exact answer to the question; the interviewer wants to see your thought process when problem solving.</li>
             </ul>
+        </div>
 
-
-        </section>
-
+        <div class="ace-interview" tabindex="0">
         <h2>Interview Resources</h2>
-
+     
         <h3>Ace Your Next Interview!</h3>
 
             <p>Practice makes perfect when it comes to interviews. The goal of interviewing is to demonstrate to an employer that you can do the job,show how you bring value to the comapany and help determine if the organization is a right fit for you. Check out the video below for some great tips and tricks.</p>
+        </div>
 
+        <div class="interview-vid" tabindex="0">
             <iframe width="700" height="400" src="https://www.youtube.com/embed/S0SwzJrFAvU" title="Ace Your Next Interview: From Preparation to Practice" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
 
+         <div class="interview-resource-list" tabindex="0">
         <h3>Top Resources from the UMSI CDO <a href = "https://umich.instructure.com/courses/137916" target = "_blank">Canvas</a>  Page</h3>
 
         <ul>
@@ -73,12 +85,11 @@
             <li><a href = "https://learntocodewith.me/posts/technical-interview/" target = "_blank">The Ultimate Guide to Acing Your Technical Interview</a></li>
             <li><a href = "https://blog.uxfol.io/ux-portfolio-presentation/" target = "_blank">How to Present Your UX Portfolio in an Interview</a></li>
             <li><a href = "https://docs.google.com/document/d/1GYuu8djjlM33PGblkjMNc9ZCgFXH0OoktPeLK2Nr7TQ/edit?usp=sharing" target = "_blank">Questions to Ask in an Interview</a></li>
-
-
         </ul>
 
-        <p>Need to talk to an advisor?<a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank"> Schedule a 1:1 career coach meeting or attend drop-in hours</a></p>
 
+        <p>Need to talk to an advisor?<a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank"> Schedule a 1:1 career coach meeting or attend drop-in hours</a></p>
+        </div>
         
     </main>
 
