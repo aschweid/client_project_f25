@@ -12,7 +12,7 @@ nav a{
 nav li{
   list-style: none;
   line-height: 1.25;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 nav ul{
@@ -65,7 +65,7 @@ h1,h2,h3{
 h1{
   font-size: 40px;
   line-height: 1;
-  padding: 25px 0;
+  padding: 25px 10px;
   text-align: center;
   background-color: #ffcb05;
 }
@@ -118,15 +118,21 @@ p{
 }
 
 
- /*background color and border bottom characeristics were taken from https://www.si.umich.edu/*/
-footer{
-  background-color: #f2f2f2;;
+.footerpg{
+  margin-top: 1em;
+}
+
+ footer{
+  font-size: 18px;
+ /*background color (light gray) and footer border bottom characeristics were taken from https://www.si.umich.edu/*/
+  background-color: #f2f2f2;
   border-bottom: 13px solid #ffcb05;
   color: black;
   padding: 30px;
   text-align: center;
 
 }
+
 
 .logo img{
   display: block;
@@ -162,7 +168,7 @@ footer{
   margin: auto;
 }
 
-/* --- Fix image overflow ---  From Chat gpt*/
+
 .IndexContainer img , .NetworkingContainer img, .InterviewContainer img, .ResumeContainer img {
   max-width: 100%;
   height: auto;
