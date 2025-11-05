@@ -13,19 +13,22 @@
 <body>
 
   <header>
+    <div class="logo" id="logo" tabindex="0">
+      <img src="images/logo-header.png" alt="University of Michgian School of Information">
+    </div>
+
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    
     <nav>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="resume.html">Resumes</a></li>
-        <li><a href="networking.html">Networking & Connections</a></li>
+        <li><a href="networking.html">Networking</a></li>
         <li><a href="interview.html">Technical Interviews</a></li>
       </ul>
     </nav>
 
-    <div class="logo" id="logo" tabindex="0">
-      <img src="images/logo-header.png" alt="University of Michgian School of Information">
-    </div>
+
 
     <div class="title" tabindex="0">
       <h1>Welcome to the UMSI Career Development Resource Hub</h1>
@@ -129,11 +132,17 @@
 
 
   <footer>
-
-    <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a> <br>
+    <p>© Copyrights <span id="year"></span> Regents of the University of Michigan</p>
+    <br>
     <p class="footerpg">University of Michigan School of Information <br>
       2200 Hayward Street <br>
-      Ann Arbor, MI 48109 </p>
+      Ann Arbor, MI 48109
+    </p>
+
+
+      <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+      </script>
   </footer>
 </body>
 

@@ -1,31 +1,48 @@
 /*Navigation Styling*/
-nav a {
-  color: #00274c;
-  text-decoration: none;
+
+ nav {
+    border-top: 10px solid #f2f2f2;
+  }
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0 10px;
+  justify-items: center;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  width: 100%;
+  padding-inline-start: 0px;
 }
+
+nav ul li {
+    width: 100%;
+  }
+
+
+nav ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  line-height: 1.25;
+  font-size: 20px;
+  text-decoration: none;
+  color: #00274c;
+  height: 50px;
+}
+
 
 .active {
   background-color: #ffcb05;
   text-decoration: underline;
 }
 
-nav li {
-  list-style: none;
-  line-height: 1.25;
-  font-size: 20px;
-}
-
-nav ul {
-  padding: 10px;
-}
-
-
 nav a:hover,
 nav a:focus {
-  border-style: dotted;
-  border-width: 2px;
-  border-color: purple;
-  outline: none;
+  background-color:  #ffcb05;
+
 }
 
 /*Skip To Main Styling*/
@@ -111,9 +128,7 @@ p {
 }
 
 
-.footerpg {
-  margin-top: 1em;
-}
+
 
 footer {
   font-size: 18px;
@@ -284,7 +299,8 @@ footer {
 .resume-overview,
 .resume-resources,
 .resume-steps,
-.careerfair-img, .resume-resources-pg {
+.careerfair-img,
+.resume-resources-pg {
   grid-column: 1/-1;
 }
 
@@ -304,12 +320,12 @@ footer {
   grid-row: 4/span 1;
 }
 
-.resume-resources-pg{
+.resume-resources-pg {
   grid-row: 5/span 1;
 
 }
 
-div.resume-resources-pg{
+div.resume-resources-pg {
   padding-top: 0px;
 }
 
@@ -391,12 +407,12 @@ div.resume-resources-pg{
   grid-row: 5/span 1;
 }
 
-.interview-advising{
+.interview-advising {
   grid-column: 1/-1;
   grid-row: 6/span 1;
 }
 
-div.interview-advising{
+div.interview-advising {
   padding-top: 0px;
 }
 
@@ -419,9 +435,23 @@ div.interview-advising{
 
 
 /*Start of Table View*/
+/*Sample at 1024 px*/
 
-@media screen and (min-width: 1024px) {
-  
+@media screen and (min-width: 820px) {
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 0px;
+    justify-items: start;
+    justify-self: start;
+  }
+
+  nav ul li a {
+    padding: 15px;
+  }
+
   /*Home Page*/
   .overview {
     grid-column: 1/span 2;
@@ -445,15 +475,16 @@ div.interview-advising{
   .summer_intern_vid {
     grid-column: 1/span 2;
     grid-row: 5/span 1;
-  
+
   }
-  .popular-resources{
+
+  .popular-resources {
     grid-row: 5/span 1;
     grid-column: 3/span 2;
-    justify-self: center;  
-    text-align: left;   
+    justify-self: center;
+    text-align: left;
     max-width: 400px;
-    
+
   }
 
 
@@ -468,82 +499,83 @@ div.interview-advising{
     grid-row: 3/span 1;
 
   }
-  .connect-text{
+
+  .connect-text {
     padding-top: 40px;
   }
 
 
 
   /*Resume Page*/
-  .careerfair-img{
+  .careerfair-img {
     grid-column: 3/span 2;
 
   }
 
-  .resume-steps{
+  .resume-steps {
     grid-row: 2/span 1;
     grid-column: 1/span 2;
   }
 
-  .resume-resources{
+  .resume-resources {
     grid-row: 3/span 1;
     grid-column: 1/span 3;
   }
 
-  .resume-resources-pg{
+  .resume-resources-pg {
     grid-row: 3/span 1;
     grid-column: 4/span 1;
     align-self: center;
   }
 
-  .resume-resources-pg p{
+  .resume-resources-pg p {
     font-size: 25px;
     text-align: center;
     padding: 20px;
     border: 3px #00274c solid;
   }
 
-  .resume-FAQ{
+  .resume-FAQ {
     grid-row: 4/span 1;
   }
 
 
   /*Networking Page*/
-  .network-intro{
+  .network-intro {
     grid-column: 1/span 2;
     align-self: center;
   }
 
-  .network-img1{
+  .network-img1 {
     grid-row: 1/span 1;
     grid-column: 3/span 2;
   }
 
-  .networking-courses{
+  .networking-courses {
     grid-row: 2/span 1;
     grid-column: 3/span 2;
     align-self: center;
   }
 
-  .networking-vid{
+  .networking-vid {
     grid-row: 2/span 1;
     grid-column: 1/span 2;
   }
 
-  .networking-ways{
+  .networking-ways {
     grid-row: 3/span 1;
   }
 
-  .networking-img2{
+  .networking-img2 {
     grid-row: 4/span 1;
     grid-column: 3/span 2;
   }
 
-  .networking-canvas{
+  .networking-canvas {
     grid-row: 5/span 1;
   }
 
-  .networking-resources{
+  .networking-resources {
     grid-column: 1/span 2;
     grid-row: 4/span 1;
     align-self: center;
@@ -552,45 +584,46 @@ div.interview-advising{
   /*Technical Interviews Page*/
 
 
-  .fdoc-img{
+  .fdoc-img {
     grid-row: 2/span 1;
     grid-column: 1/span 2;
   }
 
-  .interview-prep{
+  .interview-prep {
     grid-row: 2/span 1;
     grid-column: 3/span 2;
     align-self: center;
   }
 
-  .tech-interview-guide{
+  .tech-interview-guide {
     grid-row: 3/span 1;
   }
 
-  .ace-interview{
-    grid-row:4/span 1;
+  .ace-interview {
+    grid-row: 4/span 1;
     grid-column: 1/span 2;
   }
-  
-  .interview-vid{
-    grid-row:4/span 1;
-    grid-column: 3/span 2;;
+
+  .interview-vid {
+    grid-row: 4/span 1;
+    grid-column: 3/span 2;
+    ;
   }
 
-  .interview-resource-list{
+  .interview-resource-list {
     grid-row: 5/span 1;
     grid-column: 3/span 2;
-  
+
   }
 
-  .interview-advising{
+  .interview-advising {
     grid-row: 5/span 1;
     grid-column: 1/span 2;
     align-self: center;
     justify-self: center;
   }
 
-  .interview-advising p{
+  .interview-advising p {
     font-size: 25px;
     text-align: center;
     padding: 20px;
