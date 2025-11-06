@@ -45,6 +45,60 @@ nav a:focus {
 
 }
 
+/*Search Bar Styling taken and modified from W3 Schools*/
+/*https://www.w3schools.com/howto/howto_css_searchbar.asp*/
+
+.topnav {
+  overflow: hidden;
+  background-color: #f2f2f2;
+  
+}
+
+.topnav .search-container {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+
+.topnav .search-container input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  display: flex;           
+  align-items: center;
+  justify-content: center;
+  float: right;
+}
+
+.search-container img {
+  width: 20px;  
+  height: 20px;  
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+
+
+label[for="search"]
+{
+    visibility:hidden;
+}
+
+
 /*Skip To Main Styling*/
 
 .skip a {
@@ -223,7 +277,6 @@ footer {
 .connect-text,
 .video-title {
   grid-column: 1/-1;
-  grid-column: 1 / -1;
   justify-self: stretch;
   align-self: center;
   width: 100%;
@@ -300,12 +353,16 @@ footer {
 .resume-resources,
 .resume-steps,
 .careerfair-img,
-.resume-resources-pg {
+.resume-resources-pg{
   grid-column: 1/-1;
 }
 
 .resume-overview {
   grid-row: 1/span 1;
+}
+
+div.resume-overview{
+  padding-bottom: 0px;
 }
 
 .careerfair-img {
@@ -322,12 +379,14 @@ footer {
 
 .resume-resources-pg {
   grid-row: 5/span 1;
-
+  padding: 20px;
+  
 }
 
 div.resume-resources-pg {
   padding-top: 0px;
 }
+
 
 .resume-FAQ {
   grid-row: 6/span 1;
@@ -434,6 +493,40 @@ div.interview-advising {
 }
 
 
+
+/*404 Page Styling*/
+.error-pg{
+  box-sizing: border-box;
+  padding: 50px;
+  text-align: center;
+  margin:auto;
+  width: 80%;
+}
+
+.error-pg p{
+  font-size: 25px;
+}
+
+.error-button{
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #00274c;
+  border-radius: 15px;
+  text-align: center;
+  display: block;
+  margin:0 auto 200px;
+  width: fit-content; 
+}
+
+.error-button a{
+  color:white;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+
+
+
 /*Start of Table View*/
 /*Sample at 1024 px*/
 
@@ -451,6 +544,7 @@ div.interview-advising {
   nav ul li a {
     padding: 15px;
   }
+
 
   /*Home Page*/
   .overview {
@@ -507,15 +601,22 @@ div.interview-advising {
 
 
   /*Resume Page*/
-  .careerfair-img {
-    grid-column: 3/span 2;
-
+  .resume-overview{
+    grid-row: 1/span 1;
   }
 
   .resume-steps {
     grid-row: 2/span 1;
     grid-column: 1/span 2;
   }
+
+   .careerfair-img {
+    grid-row: 2/span 1;
+    grid-column: 3/span 2;
+    align-self: center;
+
+  }
+
 
   .resume-resources {
     grid-row: 3/span 1;
@@ -526,13 +627,14 @@ div.interview-advising {
     grid-row: 3/span 1;
     grid-column: 4/span 1;
     align-self: center;
+    
   }
 
   .resume-resources-pg p {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     padding: 20px;
-    border: 3px #00274c solid;
+    background-color:#f2f2f2;
   }
 
   .resume-FAQ {
@@ -624,10 +726,10 @@ div.interview-advising {
   }
 
   .interview-advising p {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     padding: 20px;
-    border: 3px #00274c solid;
+    background-color:#f2f2f2;
   }
 
 }

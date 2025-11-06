@@ -14,12 +14,23 @@
 
   <header>
 
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+
     <div class="logo" id="logo" tabindex="0">
       <img src="images/logo-header.png" alt="University of Michgian School of Information">
     </div>
 
+    <!--Form for search bar from W3 Schools-->
+    <div class="topnav">
+      <div class="search-container">
+        <form action="/404.html">
+          <label for="search">Search</label>
+          <input type="text" placeholder="Search.." name="search" id="search">
+          <button type="submit" id="search" name="search"><img src="/images/search-icon.svg" alt="Search icon"></button>
+        </form>
+      </div>
+    </div>
 
-    <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -49,13 +60,8 @@
         UMSI students are in high demand, and a clear, well-organized resume will help you stand out among applicants.
         On this page, you'll find practical tips, templates, and guides—all tailored to the needs of School of
         Information students and aligned with employer expectations.</p>
-
-      <p>
-        Need feedback? You can always <a
-          href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank">meet with a
-          CDO Career Coach</a> to review your materials.
-      </p>
     </div>
+
 
     <div class="careerfair-img" tabindex="0">
       <img src=" images/UMSI_CareerFair_02062025_12.jpg"
@@ -126,11 +132,13 @@
 
     <div class="resume-resources-pg" tabindex="0">
       <p>
-        Ready for a resume review? <br><a
+        <span class="bold-text">Ready for a resume review?</span><br><a
           href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank">Book a resume
-          review appointment with a CDO Career Coach</a>.
+          review with a CDO Career Coach</a>
       </p>
     </div>
+
+
 
     <div class="resume-FAQ" tabindex="0">
       <h2>Resume FAQ</h2>
@@ -165,7 +173,7 @@
         UMGPT. (2025). UMGPT (GPT-4.1 August 25th version) [Large language model]. -->
   </main>
 
-    <footer>
+  <footer>
     <p>© Copyrights <span id="year"></span> Regents of the University of Michigan</p>
     <br>
     <p class="footerpg">University of Michigan School of Information <br>
@@ -174,9 +182,9 @@
     </p>
 
 
-      <script>
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-      </script>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
   </footer>
 
 </body>
