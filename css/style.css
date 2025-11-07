@@ -380,7 +380,6 @@ div.resume-overview{
 .resume-resources-pg {
   grid-row: 5/span 1;
   padding: 20px;
-  
 }
 
 div.resume-resources-pg {
@@ -488,9 +487,7 @@ div.interview-advising {
   grid-row: 8/span 1;
 }
 
-.interview-resource-list p {
-  margin-top: 1em;
-}
+
 
 
 
@@ -630,6 +627,10 @@ div.interview-advising {
     
   }
 
+  .resume-review-Q{
+    display:block;
+  }
+
   .resume-resources-pg p {
     font-size: 20px;
     text-align: center;
@@ -723,6 +724,10 @@ div.interview-advising {
     grid-column: 1/span 2;
     align-self: center;
     justify-self: center;
+  }
+
+  .interview-advising-Q{
+    display:block;
   }
 
   .interview-advising p {
