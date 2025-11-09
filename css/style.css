@@ -195,6 +195,27 @@ footer {
 
 }
 
+.social-media-icon-group {
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 1em;
+    justify-content: center;
+    width: auto;
+}
+
+.social-media-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-icon svg{
+  width: 40px;
+  height:auto;
+  display: block;
+  fill:#00274c;
+}
 
 .logo img {
   display: block;
